@@ -6,6 +6,7 @@
     # programs
     ./programs/nvf.nix
     ./programs/firefox.nix
+    ./programs/zsh.nix
   ];
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
@@ -58,6 +59,7 @@
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager"]; # Enable ‘sudo’ for the user.
     home = "/home/luketeo";
+    shell = pkgs.zsh;
   };
 
   # System wide packages
