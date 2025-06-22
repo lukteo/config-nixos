@@ -1,10 +1,15 @@
 {pkgs, ...}: {
   imports = [
     ./programs/git.nix
+    ./programs/kitty.nix
+    ./programs/zsh.nix
   ];
   home = {
     username = "luketeo";
     homeDirectory = "/home/luketeo";
+    shell = {
+      enableZshIntegration = true;
+    };
     packages = with pkgs; [
       ripgrep # recursively searches directories for a regex pattern
       jq # A lightweight and flexible command-line JSON processor
