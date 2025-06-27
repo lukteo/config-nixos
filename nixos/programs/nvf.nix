@@ -216,8 +216,25 @@ _: {
         # plugins configuration
         theme = {
           enable = true;
-          name = "github";
-          style = "dark_tritanopia";
+          name = "base16";
+          base16-colors = {
+            base00 = "000000";
+            base01 = "181818"; # Lighter Background (Used for status bars, line number and folding marks)
+            base02 = "282828"; # Selection Background
+            base03 = "383838"; # Comments, Invisibles, Line Highlighting
+            base04 = "585858"; # Dark Foreground (Used for status bars)
+            base05 = "b8b8b8"; # Default Foreground, Caret, Delimiters, Operators
+            base06 = "d8d8d8"; # Light Foreground (Not often used)
+            base07 = "f8f8f8"; # Light Background (Not often used)
+            base08 = "ab4642"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+            base09 = "dc9656"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+            base0A = "f7ca88"; # Classes, Markup Bold, Search Text Background
+            base0B = "a1b56c"; # Strings, Inherited Class, Markup Code, Diff Inserted
+            base0C = "86c1b9"; # Support, Regular Expressions, Escape Characters, Markup Quotes
+            base0D = "7cafc2"; # Functions, Methods, Attribute IDs, Headings
+            base0E = "ba8baf"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
+            base0F = "a16946"; # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>          };
+          };
         };
         telescope = {
           enable = true;
@@ -228,6 +245,12 @@ _: {
         utility = {
           oil-nvim = {
             enable = true;
+          };
+        };
+        terminal = {
+          toggleterm = {
+            enable = true;
+            lazygit.enable = true;
           };
         };
       };
