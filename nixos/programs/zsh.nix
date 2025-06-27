@@ -8,6 +8,7 @@ _: {
     shellAliases = {
       ll = "ls -l";
       la = "ls -la";
+      lg = "lazygit";
       gs = "git status";
       update = "sudo nixos-rebuild switch --flake ~/config-nixos#thinkpad";
     };

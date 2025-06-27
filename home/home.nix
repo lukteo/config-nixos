@@ -3,6 +3,7 @@
     ./programs/git.nix
     ./programs/kitty.nix
     ./programs/zsh.nix
+    ./programs/lazygit.nix
   ];
   home = {
     username = "luketeo";
