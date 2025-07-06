@@ -52,6 +52,10 @@
       ethtool
       pciutils # lspci
       usbutils # lsusb
+
+      # development related
+      go
+      biome
     ];
   };
 

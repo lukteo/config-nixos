@@ -1,4 +1,4 @@
-_: {
+{pkgs, ...}: {
   programs.nvf = {
     enable = true;
     defaultEditor = true;
@@ -200,6 +200,10 @@ _: {
           ts = {
             enable = true;
             lsp.enable = true;
+            format = {
+              package = pkgs.biome;
+              type = "biome";
+            };
           };
 
           go = {
