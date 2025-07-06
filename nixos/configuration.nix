@@ -68,6 +68,12 @@
     wget
     curl
     git
+
+    # gnome extensions
+    gnomeExtensions.removable-drive-menu
+    gnomeExtensions.system-monitor
+    gnomeExtensions.just-perfection
+    gnomeExtensions.thinkpad-thermal
   ];
 
   # Font settings
