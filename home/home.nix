@@ -56,6 +56,11 @@
       # development related
       go
       biome
+      python314
+      uv
+      gcc
+      rocmPackages.llvm.clang-unwrapped
+      cmake
     ];
   };
 
