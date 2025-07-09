@@ -27,6 +27,7 @@
       gawk
       zstd
       gnupg
+      wl-clipboard
 
       # nix related
       #
