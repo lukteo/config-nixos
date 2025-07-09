@@ -4,7 +4,7 @@
     ./hardware-configuration.nix
 
     # programs
-    ./programs/nvf.nix
+    ./programs/nvf/default.nix
     ./programs/firefox.nix
     ./programs/zsh.nix
   ];
